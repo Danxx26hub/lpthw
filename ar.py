@@ -12,4 +12,4 @@ ans = input("Please confirm the name matches by typing in the name\n")
 if ans == script:
     print("yes they match!")
 else:
-    print("sorry that is not match")
+    print("sorry that is not a match")
