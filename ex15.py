@@ -11,6 +11,8 @@ print(f"here's your file {filename}:")
 
 print(text.read())
 
+text.close()
+
 print("Type the filename again:")
 
 file_again = input(">")
@@ -19,5 +21,5 @@ text_again = open(file_again)
 
 print(text_again.read())
 
-
+text_again.close()
 
