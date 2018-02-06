@@ -13,7 +13,7 @@ print(f"Copying from {from_file} to {to_file}")
 
 in_file = open(from_file) 
 
-indata = in_file.read()
+indata = in_file.input()
 
 print(f"The input file is {len(indata)} bytes long")
 

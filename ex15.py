@@ -11,6 +11,10 @@ print(f"here's your file {filename}:")
 
 print(text.read())
 
+t = len(filename)
+
+print(f"the file containts {t} charecters")
+
 text.close()
 
 print("Type the filename again:")
