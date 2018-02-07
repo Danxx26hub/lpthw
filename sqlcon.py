@@ -28,5 +28,37 @@ if a == 'y':
 
 
 else:
-    print('thank you')
+    print('thank you, would you like to add a user?')
+    
+    print(prompt)
+
+    ans = input(str())
+
+
+
+if ans  == 'y':
+    print('Please enter users ID:')
+    print(prompt)
+    id  = input(int())
+
+    print('Please enter users name:')
+    print(prompt)
+    name1 = input(str())
+
+
+    print('Please enter users Access type (admin, user, etc.):')
+    print(prompt)
+    access1 = input(str())
+
+
+    print('Please enter users bulding number:')
+    print(prompt)
+    bldg = input(int())
+
+    cursor.execute('''INSERT INTO users(ID, NAME, ACCESS, BUILDING) VALUES (?,?,?,?)''',(id, name1, access1, bldg))
+    db.commit()
+    print('Insert complete')
+
+
+            
 
