@@ -27,16 +27,16 @@ if a == 'y':
         print('{0} : {1}, {2}'.format(row[0], row[1], row[2]))
 
 
-else:
+elif a == 'n':
     print('thank you, would you like to add a user?')
     
     print(prompt)
 
-    ans = input(str())
+    a = input(str())
 
 
 
-if ans  == 'y':
+if a  == 'y':
     print('Please enter users ID:')
     print(prompt)
     id  = input(int())
@@ -59,6 +59,8 @@ if ans  == 'y':
     db.commit()
     print('Insert complete')
 
+else: 
+    print('thank you!')
 
             
 
