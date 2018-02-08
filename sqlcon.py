@@ -10,25 +10,24 @@ cursor = db.cursor()
 
 cursor.execute('''SELECT ID, NAME, ACCESS FROM users''')
 
-user1 = cursor.fetchone()
+# user1 = cursor.fetchone()
 
-print('printing name of first user in database')
-print(user1[1])
+#print('printing name of first user in database')
+#print(user1[1])
 
-print('would you like to see all info?: y/n')
+print('to see all records press 1, to a new record press 2, to exit press 3')
 print(prompt)
 a = input(str())
 
-if a == 'y':
+if a == '1':
 
     all_rows = cursor.fetchall()
 
     for row in all_rows:
         print('{0} : {1}, {2}'.format(row[0], row[1], row[2]))
 
-
-elif a == 'n':
-    print('thank you, would you like to add a user?')
+#elif a == 'n':
+#    print('thank you, would you like to add a user?')
     
     print(prompt)
 
@@ -36,7 +35,7 @@ elif a == 'n':
 
 
 
-if a  == 'y':
+elif a  == '2':
     print('Please enter users ID:')
     print(prompt)
     id  = input(int())
@@ -59,7 +58,8 @@ if a  == 'y':
     db.commit()
     print('Insert complete')
 
-else: 
+elif a == '3': 
+    
     print('thank you!')
 
             
