@@ -38,21 +38,25 @@ if a == '1':
 elif a  == '2':
     print('Please enter users ID:')
     print(prompt)
-    id  = input(int())
+    #  id = None
+    id  = int(input())
 
     print('Please enter users name:')
     print(prompt)
+    name1 = None
     name1 = input(str())
 
 
     print('Please enter users Access type (admin, user, etc.):')
     print(prompt)
+    access1 = None
     access1 = input(str())
 
 
     print('Please enter users bulding number:')
     print(prompt)
-    bldg = input(int())
+    bldg = None
+    bldg = int(input())
 
     cursor.execute('''INSERT INTO users(ID, NAME, ACCESS, BUILDING) VALUES (?,?,?,?)''',(id, name1, access1, bldg))
     db.commit()
