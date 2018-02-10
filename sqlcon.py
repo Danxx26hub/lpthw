@@ -8,7 +8,7 @@ db = sqlite3.connect('db1.db')
 
 cursor = db.cursor()
 
-cursor.execute('''SELECT ID, NAME, ACCESS FROM users''')
+cursor.execute('''SELECT ID, NAME, ACCESS, BUILDING FROM users''')
 
 # user1 = cursor.fetchone()
 
@@ -24,7 +24,7 @@ if a == '1':
     all_rows = cursor.fetchall()
 
     for row in all_rows:
-        print('{0} : {1}, {2}'.format(row[0], row[1], row[2]))
+        print('{0} : {1} : {2} : {3}'.format(row[0], row[1], row[2], row[3]))
 
 #elif a == 'n':
 #    print('thank you, would you like to add a user?')
