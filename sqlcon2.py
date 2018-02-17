@@ -27,11 +27,6 @@ if a == '1':
          print('{0} : {1} : {2} : {3}'.format(row[0], row[1], row[2], row[3]))
 
 
-
-
-
-
-
 #elif a == 'n':
 #    print('thank you, would you like to add a user?')
     
