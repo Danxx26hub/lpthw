@@ -26,6 +26,8 @@ results = s.recv(4096)
 while (len(results)) > 0:
     print(results)
 
-    results = s. recv(4096)
+    results = s.recv(4096)
+    result = []
+    result.append(results)
 
-
+    print(result)
